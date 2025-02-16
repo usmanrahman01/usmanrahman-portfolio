@@ -1,0 +1,391 @@
+/* src/App.css */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+}
+header{
+background-color: #fff;
+}
+.nav{
+ 
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nave{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50vw;
+  justify-content: space-between;
+
+}
+.logosec{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  justify-content: space-around;
+}
+.navitem{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.nav li li h1{
+  color: #121212;
+  font-size: medium;
+  font-style: normal;
+  font-weight: bold;
+}
+.logo{
+  height: 50px;
+  margin: 5px;
+}
+.nav li a{
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+
+}
+.banner{
+  display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    padding: 150px;
+}
+.header-content {
+  max-width: 30%;
+p{
+  font-size: small;
+}
+}
+.name{
+  font-size: xx-large;
+  margin: 25px 0;
+}
+.profile-image {
+  width: 350px;
+  height: 400px;
+  border-radius: 10%;
+}
+
+.resume-btn {
+  background-color: #3586ff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #58585821;
+}
+
+.skill {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.skills {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skills::before,
+.skills::after {
+  content: '';
+  flex: 0 0 50%; /* Adjust to control how far the skills travel */
+}
+
+.skill {
+  display: inline-block;
+  padding: 0 10px;
+  
+ /* font-size: 1.5rem;*/
+  animation: scrollSkills 10s ease-in-out infinite;
+}
+.skill img{
+  height: 100px;
+}
+
+.imagesec {
+  max-width: 150px;
+  height: 5rem;
+  padding: 0 15px;
+  object-fit: cover;
+
+}
+
+.imagesec:last-of-type {
+  padding-left: 0;
+}
+.image{
+  margin: 0 20px;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+}
+
+.imgsec {
+  display: flex;
+  animation: swipe var(--speed) linear infinite backwards;
+  margin: 0 20px;
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(-200%);
+  }
+}
+
+.expertise{
+  display: flex;
+    flex-direction: column;
+    height: 430px;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.expertisehead{
+  padding: 20px;
+    margin-bottom: 35px;
+}
+.expertisehead h1{
+  font-size: xx-large;
+}
+.expertisehead p{
+  font-size: small;
+}
+.expertisehead li{
+  list-style: none;
+}
+.expertisecontent ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 15px;
+}
+.expertisebox{
+  width: 18%;
+  height: 18rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #2a2a2ab5;
+  border-radius: 10%;
+  justify-content: space-between;
+  padding: 30px;
+}
+.expertisebox h2{
+  font-size: large
+}
+.expertisebox p{
+  font-size: small;
+}
+.expertisecontent img{
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+ 
+}
+
+.projecthead{
+  padding: 20px;
+    margin-bottom: 35px;
+}
+.projecthead ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projecthead h1{
+  font-size: xx-large;
+}
+.projecthead p{
+  font-size: small;
+}
+.projecthead li{
+  list-style: none;
+}
+.projects {
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project-card {
+  background: #333;
+  border-radius: 8px;
+  text-align: left;
+  height: 32rem;
+
+}
+
+.project-image {
+  width: 100%;
+    border-radius: 8px;
+    height: 60%;
+}
+
+
+.project-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.project-info h3,.project-info p{
+  margin-bottom: 10px;
+}
+.projectbutton{
+  background-color: #3586ff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px 0;
+    text-decoration: none;
+}
+.contact {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  height: 500px;
+}
+.contact h2{
+  margin: 15px;
+    font-size: xx-large;
+}
+.contact p{
+  margin: 20px;
+    font-size: small;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact-form button {
+  background-color: #3586ff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* src/App.css */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  background: #0056b3;
+}
+
+/* App.css */
+
+/* Style the entire app's scrollbar */
+.App {
+  overflow-y: scroll;
+  max-height: 100vh; /* Makes the entire app scrollable if needed */
+}
+
+/* Customize scrollbar for Webkit browsers */
+.App::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.App::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.App::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Hover color */
+}
